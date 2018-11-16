@@ -1,10 +1,17 @@
 <template>
-<div>App</div>
+<div id="app">
+  <router-view></router-view>
+  <FooterGuide></FooterGuide>
+</div>
 </template>
 
 <script>
-export default {
+import FooterGuide from './components/FooterGuide/FooterGuide';
 
+export default {
+  components: {
+    FooterGuide
+  }
 }
 </script>
 
