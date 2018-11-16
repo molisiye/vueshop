@@ -15,9 +15,9 @@ Vue.use(VueRouter);
 export default new VueRouter({
   // 所有路由
   routes: [
-    { path: 'msite', component: Msite },
-    { path: 'order', component: Order },
-    { path: 'search', component: Search },
-    { path: 'profile', component: Profile },
+    { path: '/msite', component: Msite },
+    { path: '/order', component: Order },
+    { path: '/search', component: Search },
+    { path: '/profile', component: Profile },
   ],
 });
