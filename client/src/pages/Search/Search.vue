@@ -19,6 +19,7 @@ export default {};
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+@import "../../common/stylus/mixins.styl"
 .search
   width 100%
   .header
@@ -82,7 +83,7 @@ export default {};
         float: right;
         width: 18%;
         border: 4px solid #02a774;
-        font-size: 16px;
+        font-size: 13px;
         color: #fff;
         background-color: #02a774;
 </style>
