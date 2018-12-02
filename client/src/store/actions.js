@@ -21,7 +21,7 @@ export default {
     const geohash = state.latitude + ',' + state.longitude
     const result = await reqAddress(geohash)
     // 提交一个mutation
-    if (resulte.code == 0) {
+    if (result.code == 0) {
       const address = result.data
       commit(receive_address, {address})
     }
