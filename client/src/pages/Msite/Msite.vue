@@ -1,7 +1,7 @@
 <template>
   <section class="msite">
     <!-- 首页头部 -->
-    <headerTop title="北京市丰台区餐饮外卖">
+    <headerTop :title="address.name">
       <span class="header_search" slot="left">
         <i class="iconfont icon-sousou"></i>
       </span>
@@ -134,7 +134,7 @@
 import headerTop from "../../components/HeaderTop/HeaderTop"
 import Swiper from "swiper"
 import "swiper/dist/css/swiper.min.css"
-
+import {mapState} from 'vuex'
 import ShopList from "../../components/ShopList/ShopList"
 
 export default {
@@ -148,6 +148,11 @@ export default {
       }
     })
   },
+
+  computed: {
+    ...mapState(['address'])
+  },
+
   components: {
     headerTop,
     ShopList
